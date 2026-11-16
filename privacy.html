@@ -15,28 +15,41 @@
 <p>Última actualización: 16 de noviembre de 2026.</p>
 
 <p>Coco Engine es una herramienta interna de los canales Coco Sabe y Coco Knows. Solo la usa su propietario para subir
-vídeos a sus propios canales de YouTube. No es un servicio abierto al público.</p>
+vídeos a sus propias cuentas de YouTube y TikTok. No es un servicio abierto al público.</p>
 
 <h2>Datos a los que accede</h2>
+<h3>YouTube (Google)</h3>
 <ul>
   <li><strong>youtube.upload</strong>: subir vídeos, con su título y descripción, a los canales del propietario.</li>
   <li><strong>youtube.readonly</strong>: leer información básica del canal y de sus propios vídeos (identificador, estado y estadísticas públicas).</li>
 </ul>
-<p>No accede a datos de otros usuarios de YouTube ni de Google.</p>
+<h3>TikTok</h3>
+<ul>
+  <li><strong>user.info.basic</strong>: identificador de la cuenta (open_id), nombre visible y avatar, para saber qué cuenta se ha autorizado.</li>
+  <li><strong>video.publish</strong>: publicar vídeos, con su texto, en las cuentas de TikTok del propietario, y consultar las opciones de
+  privacidad de la cuenta y el estado de cada publicación.</li>
+</ul>
+<p>No accede a datos de otros usuarios de YouTube, Google ni TikTok, ni a mensajes, seguidores o contactos.</p>
 
 <h2>Uso y almacenamiento</h2>
 <p>Los tokens de autorización se guardan cifrados en el equipo del propietario. Solo se usan para publicar y para leer
-estadísticas de sus propios canales. No se venden, no se comparten con terceros y no se usan para publicidad. El uso de los
+estadísticas de sus propias cuentas. No se venden, no se comparten con terceros y no se usan para publicidad. El uso de los
 datos recibidos de las API de Google cumple la
 <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de datos de usuario de los servicios de API de Google</a>,
-incluidos los requisitos de uso limitado.</p>
+incluidos los requisitos de uso limitado. El uso de los datos de TikTok cumple los
+<a href="https://www.tiktok.com/legal/page/global/tik-tok-developer-terms-of-service/en">Términos para desarrolladores de TikTok</a>.</p>
 
 <h2>Revocar el acceso</h2>
-<p>El acceso se puede revocar en cualquier momento en
-<a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Al revocarlo, los tokens guardados se eliminan.</p>
+<ul>
+  <li>Google: <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+  <li>TikTok: en la app, Ajustes y privacidad &gt; Seguridad &gt; Apps y servicios.</li>
+</ul>
+<p>Al revocarlo, los tokens guardados se eliminan.</p>
 
-<p>También se aplican los <a href="https://www.youtube.com/t/terms">Términos del Servicio de YouTube</a> y la
-<a href="https://policies.google.com/privacy">Política de Privacidad de Google</a>.</p>
+<p>También se aplican los <a href="https://www.youtube.com/t/terms">Términos del Servicio de YouTube</a>, la
+<a href="https://policies.google.com/privacy">Política de Privacidad de Google</a> y la
+<a href="https://www.tiktok.com/legal/page/eea/privacy-policy/es">Política de privacidad de TikTok</a>.
+Consulta también nuestros <a href="terms.html">términos del servicio</a>.</p>
 
 <h2>Contacto</h2>
 <p>coco4cotend@gmail.com</p>
@@ -44,12 +57,17 @@ incluidos los requisitos de uso limitado.</p>
 <hr>
 <h1>Privacy policy — Coco Engine</h1>
 <p>Coco Engine is an internal tool of the Coco Sabe and Coco Knows channels. Only its owner uses it, to upload videos to
-their own YouTube channels. It is not a public service.</p>
-<p>Scopes: <strong>youtube.upload</strong> (upload videos with their metadata) and <strong>youtube.readonly</strong> (read basic
-channel information and the channel's own video statistics). Authorization tokens are stored encrypted on the owner's
-computer. They are used only to publish and to read statistics of the owner's own channels, and they are never sold, shared
-or used for advertising. Use of information received from Google APIs complies with the Google API Services User Data
-Policy, including the Limited Use requirements. Access can be revoked at any time at myaccount.google.com/permissions.
-Contact: coco4cotend@gmail.com</p>
+their own YouTube and TikTok accounts. It is not a public service.</p>
+<p>YouTube scopes: <strong>youtube.upload</strong> (upload videos with their metadata) and <strong>youtube.readonly</strong> (read basic
+channel information and the channel's own video statistics).</p>
+<p>TikTok scopes: <strong>user.info.basic</strong> (account id, display name and avatar, to know which account was authorised) and
+<strong>video.publish</strong> (post videos with their caption to the owner's own TikTok accounts, read the account's privacy options
+and the status of each post).</p>
+<p>No data of other users is accessed. Authorization tokens are stored encrypted on the owner's computer. They are used only to
+publish and to read statistics of the owner's own accounts, and they are never sold, shared or used for advertising. Use of
+information received from Google APIs complies with the Google API Services User Data Policy, including the Limited Use
+requirements. Use of TikTok data complies with the TikTok Developer Terms of Service. Access can be revoked at any time at
+myaccount.google.com/permissions (Google) or in the TikTok app under Settings and privacy &gt; Security &gt; Apps and services.
+See also our <a href="terms.html">terms of service</a>. Contact: coco4cotend@gmail.com</p>
 </body>
 </html>
